@@ -36,5 +36,5 @@ vim.opt.scrolloff = 8
 -- 次の require は常にファイル末尾に来るようにする
 -- i.e. 設定を追記するならこのセクションの上に書く
 --------------------
-
+require("config.keymaps")
 require("config.lazy")
