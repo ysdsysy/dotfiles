@@ -60,6 +60,11 @@ export default defineConfig(async () => {
       keyword: "so",
       snippet: "source ~/.zshrc",
     },
+    {
+      name: "Exit terminal",
+      keyword: "qq",
+      snippet: "exit",
+    },
   ];
 
   const completions: UserCompletionSource[] = [
