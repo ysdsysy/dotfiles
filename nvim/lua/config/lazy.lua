@@ -23,6 +23,5 @@ require("lazy").setup({
   },
   -- プラグインインストール中に使う仮のカラースキーム
   install = { colorscheme = { "habamax" } },
-  -- プラグインの更新を自動でチェックする
-  checker = { enabled = true },
+  checker = { enabled = false },
 })
