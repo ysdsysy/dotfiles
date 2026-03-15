@@ -24,6 +24,9 @@ if [ -x /usr/bin/dircolors ]; then
     ls() { command ls --color=auto "$@" }
 fi
 
+# ===== エディタ設定 =====
+export EDITOR=nvim
+
 # ===== パス設定 =====
 export PATH="$HOME/.local/bin:$PATH"
 
