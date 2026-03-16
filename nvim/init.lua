@@ -32,6 +32,10 @@ vim.opt.undofile = true
 -- 画面端から8行以内にカーソルが来たら自動でスクロールする
 vim.opt.scrolloff = 8
 
+-- [[wiki-link]] 形式のリンクで gf を使えるようにする
+vim.opt.suffixesadd:append(".md")
+vim.opt.includeexpr = "substitute(v:fname,'\\[\\[\\|\\]\\]','','g')"
+
 --------------------
 -- 次の require は常にファイル末尾に来るようにする
 -- i.e. 設定を追記するならこのセクションの上に書く
