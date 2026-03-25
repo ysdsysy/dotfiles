@@ -3,7 +3,11 @@ import type { Snippet, UserCompletionSource } from "jsr:@yuki-yano/zeno";
 
 export default defineConfig(async () => {
   const snippets: Snippet[] = [
+
+    // -------------------------
     // Git
+    // -------------------------
+
     {
       name: "git status",
       keyword: "gs",
@@ -20,11 +24,20 @@ export default defineConfig(async () => {
       snippet: "git commit -m '{{message}}'",
     },
     {
+      name: "git push",
+      keyword: "gp",
+      snippet: "git push"
+    },
+    {
       name: "git log",
       keyword: "gl",
       snippet: "git log --oneline -20",
     },
+
+    // -------------------------
     // nb
+    // -------------------------
+
     {
       name: "Edit Note",
       keyword: "nbe",
@@ -45,6 +58,11 @@ export default defineConfig(async () => {
       keyword: "nbg",
       snippet: 'rg "{{keyword}}" "$(nb notebooks current --path)"',
     },
+
+    // -------------------------
+    // Basic commands
+    // -------------------------
+
     {
       name: "ls -la",
       keyword: "ll",
