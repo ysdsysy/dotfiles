@@ -39,6 +39,11 @@ export default defineConfig(async () => {
     // -------------------------
 
     {
+      name: "Add Note",
+      keyword: "na",
+      snippet: "nb add",
+    },
+    {
       name: "Edit Note",
       keyword: "nbe",
       snippet: "nb edit",
@@ -57,6 +62,11 @@ export default defineConfig(async () => {
       name: "nb search",
       keyword: "nbg",
       snippet: 'rg "{{keyword}}" "$(nb notebooks current --path)"',
+    },
+    {
+      name: "nb index rebuild",
+      keyword: "nbir",
+      snippet: "nb index rebuild",
     },
 
     // -------------------------
