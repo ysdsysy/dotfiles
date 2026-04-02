@@ -70,6 +70,16 @@ export default defineConfig(async () => {
     },
 
     // -------------------------
+    // Claude
+    // -------------------------
+
+    {
+      name: "claude resume",
+      keyword: "cr",
+      snippet: "claude --resume",
+    },
+
+    // -------------------------
     // Basic commands
     // -------------------------
 
